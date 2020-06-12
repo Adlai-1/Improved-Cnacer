@@ -1,0 +1,17 @@
+Before running the project do make sure you have the following dependencies installed on your machine before running else it will not run.
+
+1. Joblib because its used to load the model(make sure its the current version).
+2. Numpy(make sure its the latest version).
+3.Flask(make sure its the current version).
+4.Scikit-learn(make sure you install version 0.22.1).
+NB:Please install the followimg dependencies with their corresponding versions most especially the scikit-learn version 0.22.1 Its very necessary else the project will not run.
+please and please again make sure the right versions are installed else the project will not run!!
+
+When the Server runs, it opens the html page that allows the user to input the necessary data for prediction.(NB:Dont run on Jupyter notebook.It didn't work on my machine and neither did it run on Darryls machine  when we tried it.
+But however if you do and it works thats cool.)
+
+The results are displayed with no fancy html text but just a simple sentence indicating whether the breast data entered is Malignant or Benign.
+The Prediction results terminates to a '/predict' endpoint.
+
+The input made should be soley numbers(ie. int,double or float) and not string!
+Also incase your input is in the form eg: 21.99 make sure there is a . and not ,

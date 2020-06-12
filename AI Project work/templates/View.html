@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <script>
+      function Show_alert(){
+        var predict1 
+        alert(predict1)
+ }
+    </script>
+    <head>
+        <title>Breast Cancer Analysis</title>
+    </head>
+    <body style="background-color: teal;text-align: center;">
+        <div >
+        <h1 style="font-weight: bold;color: white;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Breast Cancer Data Analysis</h1> 
+        <h4 style="color: white;">AI Model predicts either Patient Breast is Malignant or Bening</h4>
+        <form action="/predict" method="POST">
+         <input name="radius" type="text" placeholder="radius mean" style="margin-bottom: 20px;padding: 10px;margin-right: 35px;">
+         <input name="texture" type="text" placeholder="texture mean" style="margin-bottom: 20px;padding: 10px;"> <br>
+         <input name="perimeter" type="text" placeholder="perimeter mean" style="margin-bottom: 20px;padding: 10px;margin-right: 35px;">
+         <input name="area" type="text" placeholder="area mean" style="margin-bottom: 20px;padding: 10px;"> <br>
+         <input name="smoothness" type="text" placeholder="smoothness mean" style="margin-bottom: 20px;padding: 10px;margin-right: 35px;">
+         <input name="compactness" type="text" placeholder="compactness mean" style="margin-bottom: 20px;padding: 10px;"> <br>
+         <input name="concavity" type="text" placeholder="concavity mean" style="margin-bottom: 20px;padding: 10px;margin-right: 35px;">
+         <input name="concave_points" type="text" placeholder="concave_points mean" style="margin-bottom: 20px;padding: 10px;"> <br>
+         <input name="symmetry" type="text" placeholder="symmetry mean" style="margin-bottom: 20px;padding: 10px;margin-right: 35px;">
+         <input name="fractal_dimension" type="text" placeholder="fractal_dimension mean" style="margin-bottom: 20px;padding: 10px;"> <br>
+         <input id="radius" type="submit" style="padding: 20px;">   
+        </form>
+        </div>
+        <div>
+            {{predict}}
+        </div>
+    </body>
+</html>
